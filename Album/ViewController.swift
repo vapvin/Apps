@@ -14,7 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func myAlert(_ sender: Any) {
+        let myAlert = UIAlertController(title: "Test Alert!", message: "Like This Swift!!", preferredStyle: .alert)
+        
+        let myAction = UIAlertAction(title: "close", style: .default, handler: nil)
+        
+        myAlert.addAction(myAction)
+        present(myAlert, animated: true, completion: nil)
+    }
 }
 
